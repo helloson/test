@@ -1,2 +1,3 @@
 import socket
-print(f'Hello from {socket.gethostname()}')
+with open('hostname.txt', 'w') as f:
+    f.write(f'Hello from {socket.gethostname()}')
